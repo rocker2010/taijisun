@@ -1,0 +1,173 @@
+/*
+------------------------------------------------
+site:	taijisun register
+Author:    liuwanzhi
+updated:   05/08/2015
+update by: liuwanzhi
+------------------------------------------------
+*/
+/* ico achieved by font */
+@font-face {
+	font-family: "iconfont";
+	src: url('iconfont.eot'); /* IE9*/
+	src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('iconfont.woff') format('woff'), /* chrome、firefox */ url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+	font-family:"iconfont" !important;
+	font-style:normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.inner {
+	padding:30px 20px;
+}
+.jianb {
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#015495), to(#45AAD8));
+	height:100%;
+	overflow: hidden;
+}
+.logoIndex {
+	background: url(images/logoS.png) no-repeat top center;
+	height: 110px;
+	margin-top: 50px;
+	background-size: auto 110px;}
+.jianb h1 {
+	font-weight: normal;
+	margin-top: 40px;
+}
+.jianb h2 {
+	font-weight: normal;
+}
+.buttonL {
+	background: url(images/button.png) center center no-repeat;
+	height: 99px;
+	display: block;
+	line-height: 99px;
+	font-size: 20px;
+	color: #fff!important;
+	margin: 40px auto 0;
+	background-size: auto 99px;
+}
+.ver {
+margin-top: 50px;
+position: relative;
+z-index: 1;
+}
+.ver a {
+	border-right: 1px #FFF solid;
+	color: white;
+	margin: 0 0 0 10px;
+	padding: 0 10px 0 0;
+	height: 10px;
+	font-size: 14px;
+	display: inline-block;
+	line-height: 10px;
+}
+.ver a:last-child {
+	border: none;
+}
+header {
+}
+header .siteinfo {
+	background:-webkit-gradient(linear, 0% 0%, 100% 100%,from(#015495), to(#45AAD8));
+	height:120px;
+	position:relative;
+}
+header nav {
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#fff), to(#E4EBEB));
+	height:40px;
+	line-height:40px;
+	text-align:right;
+	padding:0 10px;
+	color: #015495;
+	position: relative;
+}
+header .logo {
+position: absolute;
+left: 50%;
+top: 50%;
+background: url(images/logoS.png) no-repeat left center;
+background-size: auto 60px;
+padding-left: 49px;
+padding-top: 1px;
+height: 68px;
+margin-left: -154px;
+margin-top: -34px;
+}
+header .ve {
+position: absolute;
+bottom: 10px;
+right: 15px;
+font-size: 12px;
+}
+.title{ color:#ABD8F8;}
+.title span{background: #fff; padding:0 5px;position: relative;}
+.lineBlue {border-bottom: 1px #ABD8F8 dotted;position: relative;top: 14px;z-index: 0;}
+.lineBc {border-bottom:1px ##999 dotted}
+.selBox{position:relative}
+.selMenu {
+padding: 2px 26px 2px 2px;
+background: #EAF4FD;
+font-size: 13px;
+border: 1px #ABD8F8 solid;
+-webkit-appearance: none;
+position: relative;
+color: #005495;
+}
+.sj{
+	position:absolute;
+	border-width:5px;
+	border-color: #1081C0 transparent transparent transparent;
+	border-style:solid;
+	top: 50%;
+	right: 11px;
+	margin-top: -2px;
+}
+.formList li{margin:5px 0;overflow: hidden;color: #005394;
+display:-webkit-box;
+display:-moz-box;
+display:box;
+display:-ms-box;}
+.formList label{line-height: 31px;font-size: 14px;font-weight: bold;}
+.error{font-size: 12px;color:#F90;line-height: 18px;}
+.buttonSm{background: #ABD8F8;text-align: center;font-size:16px;font-weight: bold;display: block;height: 45px;line-height: 45px;color:#fff!important;width: 100%;}
+.buttonSec {background: #fff;text-align: center;font-size: 16px;font-weight: bold;display: block;height: 45px;line-height: 45px;color: #255163!important;border: 1px #DBDBDB solid;width: 100%;margin: 0 auto;border-radius: 24px;
+}
+.Mright,.Mleft{font-size: 22px;color: #fff;}
+.Mright:before {font-family: "iconfont" !important;content: "\e602";}
+.Mleft:before {font-family: "iconfont" !important;content: "\e601";}
+.yanzheng {
+height: 34px;
+vertical-align: baseline;
+margin-left: 5px;
+margin-bottom: 0;
+}
+.note {
+border-top: 1px #74BD58 dotted;
+border-bottom: 1px #74BD58 dotted;
+padding: 15px;
+background: rgb(247, 255, 231);
+color: rgb(48, 78, 10);
+font-size:14px
+}
+/* Phone */
+@media screen and (max-width: 480px) {
+	.formList li {display:block}
+	.inline-three .flex2{ float:left}
+	.inline-two .flex1{ float:left;width:50%}
+	.formList label {line-height:18px}
+	.inline-box{display:block}
+	}
+
+/* 平板之类的宽度 1024 以下设备 */
+@media only screen and (min-width: 481px) and (max-width: 1000px) {
+}
+
+/* PC客户端或大屏幕设备: 1028px 至更大 */
+@media only screen and (min-width: 1024px) {
+}
+
+/* 横屏 */
+@media screen and (orientation:landscape){}
