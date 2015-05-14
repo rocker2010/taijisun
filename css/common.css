@@ -18,7 +18,7 @@ input text background:#EAF4FD
 ------------------------------------------------
 */
 body,html{
-	font-family:"Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font:normal 100% "Microsoft YaHei", Arial, Helvetica, sans-serif;
 	display:block;
 	height:100%;
 }
@@ -27,7 +27,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 	-webkit-appearance: none;
 }
 input, textarea, select {
-	font-size:14px;
+	font-size:1em;
 	font-size:100%;
 	font-family:arial;
 	font-family:inherit;
@@ -72,13 +72,13 @@ i{font-style: normal;}
 .pr5{padding-right: 5px;}
 .pt10{padding-top: 10px;}
 
-.f12{font-size: 12px;}
-.f14{font-size: 14px;}
-.f16{font-size: 16px;}
-.f18{font-size: 18px;}
-.f20{font-size: 20px;}
-.f22{font-size: 22px;}
-.f24{font-size: 24px;}
+.f12{font-size: 0.75em;}
+.f14{font-size: 0.87em;}
+.f16{font-size: 1em;}
+.f18{font-size: 1.125em;}
+.f20{font-size: 1.25em;}
+.f22{font-size: 1.375em;}
+.f24{font-size: 1.5em;}
 
 .cgr{color:#090}
 
@@ -119,26 +119,32 @@ box-flex: 2;
 box-flex:3.0;
 }
 .w123{
-	width: 125px;
-max-width: 125px;
+	width: 9em;
+
+	max-width: 9em;
 }
 .w150{
-width: 150px;
-max-width: 150px;
+width: 10em;
+max-width: 10em;
 }
 /* Phone */
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+	body,html{font-size:14px}}
 
+@media only screen and (min-width: 481px) and (max-width: 640px) {
+	body,html{font-size:16px}
+}
+@media only screen and (min-width:641px) and (max-width: 768px) {
+	body,html{font-size:18px}
+}
 /* 平板之类的宽度 1024 以下设备 */
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
-	header{width:600px;margin:0 auto}
-	.main{width:600px;margin:0 auto;border:1px #eee solid}
+@media only screen and (min-width:769px) and (max-width: 1023px) {
+	body,html{font-size:18px}
 }
 
 /* PC客户端或大屏幕设备: 1028px 至更大 */
 @media only screen and (min-width: 1024px) {
-	header{width:800px;margin:0 auto;}
-	.main{width:800px;margin:0 auto;border:1px #eee solid}
+	body,html{font-size:20px}
 }
 
 /* 横屏 */
