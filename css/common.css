@@ -42,6 +42,12 @@ a, button, input {/* 1.去除android a/button/input标签被点击时产生的�
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-tap-highlight-color: transparent; /* For some Androids */
 }
+a:link, a:visited {
+-webkit-transition: all .25s linear 0.05s;
+	 -moz-transition: all .25s linear 0.05s;
+	   -o-transition: all .25s linear 0.05s;
+        transition: all .25s linear 0.05s;
+}
 h1,h2,h3 {}
 h4, h5, h6 {font-size:1em;}
 ul, ol {padding-left:0;list-style-type:none;}
@@ -97,7 +103,7 @@ i{font-style: normal;}
 .pzt100{width: 100%;}
 
 .cb{color: #005394;}
-.lh18{line-height: 18px;}
+.lh18{line-height: 1.125em;}
 
 .inline-box{display:-webkit-box;
 display:-moz-box;
@@ -127,26 +133,32 @@ box-flex:3.0;
 width: 10em;
 max-width: 10em;
 }
-/* Phone */
-@media screen and (max-width: 480px) {
-	body,html{font-size:14px}}
-
-@media only screen and (min-width: 481px) and (max-width: 640px) {
-	body,html{font-size:16px}
+.animation{
+-webkit-transition: all .25s linear;
+	 -moz-transition: all .25s linear;
+	   -o-transition: all .25s linear;
+        transition: all .25s linear;}
+				
+/* PC客户端或大屏幕设备: 1028px 至更大 */
+@media screen and (min-width: 1024px) {
+	header,.main{width:960px;margin:0 auto}
+	body,html{font-size:20px}
 }
-@media only screen and (min-width:641px) and (max-width: 768px) {
-	body,html{font-size:18px}
+@media screen and (max-width: 1023px) {
+	body,html{font-size:20px}
 }
 /* 平板之类的宽度 1024 以下设备 */
-@media only screen and (min-width:769px) and (max-width: 960px) {
+@media screen and (max-width: 960px) {
 	body,html{font-size:20px}
 }
-@media only screen and (min-width:961px) and (max-width: 1023px) {
-	body,html{font-size:20px}
+@media screen and (max-width: 768px) {
+	body,html{font-size:18px}
 }
-/* PC客户端或大屏幕设备: 1028px 至更大 */
-@media only screen and (min-width: 1024px) {
-	body,html{font-size:20px}
+/* Phone */
+@media screen and (max-width: 640px){
+	body,html{font-size:16px}
 }
+@media screen and (max-width: 480px) {
+	body,html{font-size:14px}}
 /* 横屏 */
 @media screen and (orientation:landscape){}

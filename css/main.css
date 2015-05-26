@@ -169,6 +169,11 @@ header .ve {
 	font-family: "iconfont" !important;
 	font-size:0.812em
 }
+.buttonSm:hover{background: #56B4F7;-webkit-transition: all .25s linear;
+	 -moz-transition: all .25s linear;
+	   -o-transition: all .25s linear;
+        transition: all .25s linear;}
+
 .buttonSm {
 	background: #ABD8F8;
 	text-align: center;
@@ -194,6 +199,13 @@ header .ve {
 	margin: 0 auto;
 	border-radius: 24px;
 }
+.buttonSec:hover{
+	-webkit-transition: all .25s linear;
+	 -moz-transition: all .25s linear;
+	   -o-transition: all .25s linear;
+        transition: all .25s linear;
+
+	color:#56B4F7!important}
 .Mright, .Mleft {
 	color: #fff;
 	vertical-align: top;
