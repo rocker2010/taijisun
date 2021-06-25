@@ -169,7 +169,7 @@ header .ve {
 	font-family: "iconfont" !important;
 	font-size:0.812em
 }
-.buttonSm:hover{background: #56B4F7;-webkit-transition: all .25s linear;
+.buttonSm:hover{background: #1181c0;-webkit-transition: all .25s linear;
 	 -moz-transition: all .25s linear;
 	   -o-transition: all .25s linear;
         transition: all .25s linear;}
@@ -178,7 +178,7 @@ header .ve {
 	background: #ABD8F8;
 	text-align: center;
 	font-size:1em;
-	font-weight: bold;
+	/* font-weight: bold; */
 	display: block;
 	height: 2.5em;
 	line-height:  2.5em;
